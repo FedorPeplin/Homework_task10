@@ -19,15 +19,10 @@ alltextsunited = []
 for elements in alltexts:
     a = (elements.split())
     alltextsunited.extend(a)
-
-# print (alltextsunited) checking
-
-allelemsmore6=[]
-for elements in alltextsunited:
     if len(elements) >= 6:
-        allelemsmore6.append(elements)
+        allelemsmore6.append(elements.capitalize())
 
-# print (sorted(allelemsmore6)) checking
+print (sorted(allelemsmore6))
 
 from collections import Counter
 def most_frequent():

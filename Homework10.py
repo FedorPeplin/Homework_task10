@@ -16,9 +16,9 @@ with open (r"C:\Users\Фёдор\Desktop\homework10\newsafr.json", 'r', encoding
     allelemsmore6=[]
     for elements in alltexts:
         if len(elements) >= 6:
-            allelemsmore6.append(elements)
+            allelemsmore6.append(elements.capitalize())
 
-    # print (sorted(allelemsmore6)) checking
+    print (sorted(allelemsmore6))
 
     from collections import Counter
     def most_frequent():
