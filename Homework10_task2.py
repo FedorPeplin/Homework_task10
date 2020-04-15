@@ -16,17 +16,21 @@ for elements in items:
 # print (alltexts) checking
 
 alltextsunited = []
+
 for elements in alltexts:
     a = (elements.split())
     alltextsunited.extend(a)
-    if len(elements) >= 6:
-        allelemsmore6.append(elements.capitalize())
 
-print (sorted(allelemsmore6))
+elementsmore6symbols=[]
+for words in alltextsunited:
+    if len(words) >= 6:
+        elementsmore6symbols.append(words.capitalize())
+
+# print (sorted(elementsmore6symbols))
 
 from collections import Counter
 def most_frequent():
-    occurence_count = Counter(allelemsmore6).most_common(10)
+    occurence_count = Counter(elementsmore6symbols).most_common(10)
     # print (occurence_count) check
     print (f'Топ 10 встречающихся слов более 6 букв и количество их упоминаний:')
     i = 0

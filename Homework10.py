@@ -13,16 +13,16 @@ with open (r"C:\Users\Фёдор\Desktop\homework10\newsafr.json", 'r', encoding
 
     # print (alltexts[0]) checking
 
-    allelemsmore6=[]
+    elementsmore6symbols=[]
     for elements in alltexts:
         if len(elements) >= 6:
-            allelemsmore6.append(elements.capitalize())
+            elementsmore6symbols.append(elements.capitalize())
 
-    print (sorted(allelemsmore6))
+    # print (sorted(elementsmore6symbols)) checking
 
     from collections import Counter
     def most_frequent():
-        occurence_count = Counter(allelemsmore6).most_common(10)
+        occurence_count = Counter(elementsmore6symbols).most_common(10)
         print (f'Топ 10 встречающихся слов более 6 букв и количество их упоминаний:')
         i = 0
         for elems in occurence_count:
